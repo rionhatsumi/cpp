@@ -1,0 +1,13 @@
+--style=allman
+
+#对于那些长的语句，往往需要分行写，这个选项即是对这种情况进行缩进对齐的。
+--max-instatement-indent=80
+
+#对运算符前后填加空格：注意不可逆！[]不填加
+--pad-oper
+
+#去掉括号两边多余的空格
+--unpad-paren
+
+#关于指针和取地址符号，*,&是放在类型，中间，还是变量名侧的选项
+--align-pointer=middle
