@@ -10,15 +10,15 @@
             "args": [
                 "-Wall",
                 "-g",
-                "${file}",
+                "${fileDirname}/${file}",
                 "-o",
-                "${fileBasenameNoExtension}.exe"
+                "${fileDirname}/${fileBasenameNoExtension}.exe"
             ],
             "problemMatcher": {
                 "owner": "cpp",
                 "fileLocation": [
                     "relative",
-                    "${workspaceFolder}"
+                    "${fileDirname}"
                 ],
                 "pattern": {
                     "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
