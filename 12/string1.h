@@ -18,10 +18,7 @@ public:
     String();               // default constructor
     String(const String &); // copy constructor
     ~String();              // destructor
-    int length() const
-    {
-        return len;
-    }
+    int length() const { return len; }
     // overloaded operator methods
     String & operator=(const String &);
     String & operator=(const char *);

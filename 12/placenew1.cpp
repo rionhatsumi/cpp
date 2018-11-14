@@ -18,14 +18,8 @@ public:
         number = n;
         cout << words << " constructed\n";
     }
-    ~JustTesting()
-    {
-        cout << words << " destroyed\n";
-    }
-    void Show()
-    {
-        cout << words << ", " << number << endl;
-    }
+    ~JustTesting() { cout << words << " destroyed\n"; }
+    void Show() { cout << words << ", " << number << endl; }
 };
 
 int main()
