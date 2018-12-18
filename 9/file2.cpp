@@ -1,8 +1,8 @@
 // 9.3
 // file2.cpp -- contains functions called in file1.cpp
-#include <iostream>
+#include "coordin.h" //structure templates, function prototypes
 #include <cmath>
-#include "coordin.h"//structure templates, function prototypes
+#include <iostream>
 
 // convert rectangular to polar coordinates
 polar rect_to_polar(rect xypos)
@@ -12,7 +12,7 @@ polar rect_to_polar(rect xypos)
 
     answer.distance = sqrt(xypos.x * xypos.x + xypos.y * xypos.y);
     answer.angle    = atan2(xypos.y, xypos.x);
-    return answer;//returns a polar structure
+    return answer; // returns a polar structure
 }
 // show polar coordinates, converting angle to degrees
 void show_polar(polar dapos)
@@ -20,7 +20,6 @@ void show_polar(polar dapos)
     using namespace std;
     const double Rad_to_deg = 57.29577951;
 
-    cout << "distance = " << dapos.distance;
-    cout << ", angle = " << dapos.angle * Rad_to_deg;
-    cout << "degrees\n";
+    cout << "distance = " << dapos.distance
+         << ", angle = " << dapos.angle * Rad_to_deg << "degrees\n";
 }

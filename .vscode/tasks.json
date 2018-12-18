@@ -10,9 +10,9 @@
             "args": [
                 "-Wall",
                 "-g",
-                "${fileDirname}/${file}",
+                "${file}",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}.exe"
+                "${fileBasenameNoExtension}.exe"
             ],
             "problemMatcher": {
                 "owner": "cpp",
